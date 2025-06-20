@@ -1,0 +1,70 @@
+# Name of your workflow, visible in the GitHub Actions tab
+name: Deploy Vite React App to GitHub Pages (User Page)
+
+# Specifies when this workflow should run
+on:
+  push:
+    branches:
+      # This workflow will run when you push to the 'master' branch.
+      # IMPORTANT: If your default branch is 'main', CHANGE 'master' to 'main' here.
+      - master
+
+# Sets permissions for the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read # Allow read access to repository contents
+  pages: write # Allow write access to the GitHub Pages deployment
+  id-token: write # Allow deployment from a private repository
+
+# Define the jobs that will run as part of this workflow
+jobs:
+  build:
+    # Specifies the operating system environment for the job
+    runs-on: ubuntu-latest
+
+    # The sequence of steps to execute within this job
+    steps:
+      # Step 1: Checkout your repository code onto the runner
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20" # Use Node.js version 20 (you can change this if needed)
+
+      # Step 3: Install project dependencies
+      - name: Install dependencies
+        # 'npm ci' is recommended in CI environments for clean, consistent installs
+        run: npm ci
+
+      # Step 4: Build the Vite React project for production
+      - name: Build project
+        # This command runs the 'build' script defined in your package.json (e.g., 'vite build')
+        run: npm run build
+
+      # Step 5: Upload the built artifact for GitHub Pages
+      # This action takes your 'dist' folder and makes it available for the 'deploy' job
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./dist" # The directory containing your built application (Vite typically outputs to 'dist')
+
+  deploy:
+    # This job will only run after the 'build' job has successfully completed
+    needs: build
+    # Specifies the operating system environment for the job
+    runs-on: ubuntu-latest
+
+    # Set the deployment environment for GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # The sequence of steps to execute within this job
+    steps:
+      # Step 1: Deploy to GitHub Pages
+      # This action takes the uploaded artifact and deploys it to your GitHub Pages site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
