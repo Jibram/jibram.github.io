@@ -20,8 +20,8 @@ var content = {
   CONTACT: [
     {
       SRC: gmailLogo,
-      ALT: "cajibram@gmail.com",
-      HREF: "mailto:cajibram@gmail.com",
+      ALT: "jibramswe@gmail.com",
+      HREF: "mailto:jibramswe@gmail.com",
     },
     {
       SRC: linkedinLogo,
