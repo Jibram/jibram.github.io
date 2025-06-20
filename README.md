@@ -1,62 +1,75 @@
-My Vite-based React Project
-This is a basic template for a Vite-based React resume website. It provides a quick setup for modern web development with React, leveraging Vite's fast development server and optimized build process.
+# Jibram's Resume Website using Vite React
 
-Getting Started
-Follow these steps to get your development environment set up and run the project locally.
+A modern frontend resume bootstrapped with [Vite](https://vitejs.dev/), featuring lightning-fast development and optimized builds.
 
-Prerequisites
-Before you begin, ensure you have Node.js and npm (or yarn/pnpm) installed on your system.
+## 🛠️ Tech Stack
 
-Node.js: Download & Install Node.js (includes npm)
+- [Vite](https://vitejs.dev/) – Fast build tool
+- [React](https://reactjs.org/) – UI library
+- [Prettier](https://prettier.io/) – Code formatter tool (optional)
+- [GitHub Actions](https://github.com/features/actions) - Build and Deployment directly from GitHub
 
-Installation
-Clone the repository:
+## 🚀 Getting Started
 
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
+### Prerequisites
 
-Replace your-username/your-repository-name.git with the actual URL of your GitHub repository.
+Make sure you have the following installed:
 
-Install dependencies:
-Use your preferred package manager:
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- npm (comes with Node.js) or [pnpm](https://pnpm.io/) or [yarn](https://yarnpkg.com/)
 
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 npm install
 # or
 yarn install
 # or
 pnpm install
+```
 
-Running the Development Server
-To start the development server and begin coding, run:
+### Running in Development
 
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+```
 
-The application will typically be available at http://localhost:5173/ (or another port if 5173 is in use). Vite will automatically open it in your browser.
+Open http://localhost:5173 to view the app.
 
-Build for Production
-When you're ready to deploy your application, you can create an optimized production build:
+If port 5173 is already occupied by another service, the output of the command should tell you what port it was automatically assigned to.
 
+### Building for Production
+
+```bash
 npm run build
-# or
-yarn build
-# or
-pnpm build
+```
 
-This command will compile your React application and place the optimized static assets in the ./dist directory. This dist folder is what you would deploy to a static hosting service.
+The production-ready files will be in the dist/ directory.
 
-Previewing the Production Build
-You can preview the production build locally before deployment:
+### Previewing Production Build
 
+```bash
 npm run preview
-# or
-yarn preview
-# or
-pnpm preview
+```
 
-This will serve the static files from the dist directory, allowing you to test how your production build behaves. It typically runs on http://localhost:4173/.
+### BUILD and DEPLOY on GitHub Pages
 
-Happy Hacking!
+For this project, I used GitHub Actions to set up a build and deploy pipeline. This means that GitHub Actions will run the build command and upload it as a GitHub Pages artifact. This artifact will then be deployed to GitHub pages. I am using the default `actions/deploy-pages@v4`. For build and deploy on GitHub pages, feel free to read the `.github/workflows/deploy.yml` file.
+
+### Project Structure
+
+```bash
+├── public/         # Static files
+├── src/            # Source code
+│   ├── assets/     # Images, fonts, etc.
+│   ├── components/ # Reusable UI components
+│   ├── App.jsx     # Main app component
+│   └── main.jsx    # Entry point
+├── index.html      # HTML template
+├── vite.config.js   # Vite config
+└── package.json    # Project metadata and scripts
+```
