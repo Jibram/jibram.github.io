@@ -13,7 +13,6 @@ var content = {
   ME: {
     PHOTO: mePicture,
     FIRSTNAME: "Jibram ",
-    LASTNAME: "Jimenez-Loza",
   },
   ABOUT:
     "I'm a software engineer in San Francisco, CA that has 5 years of combined experience in applied artificial intelligence, machine learning, and front end.",
@@ -112,8 +111,8 @@ var content = {
     {
       LOGO: ucmLogo,
       NAME: "University of California, Merced",
-      DEGREE: "Bachelor of Science, Computer Science and Engineering",
-      EXTRA: "Graduated with honors (3.6 GPA)",
+      DEGREE: "BSc in Computer Science",
+      EXTRA: "Honors (3.6 GPA)",
       START: "08/2016",
       END: "12/2019",
       CLASSES: [
@@ -126,7 +125,7 @@ var content = {
     {
       LOGO: yonseiLogo,
       NAME: "Yonsei University, Seoul",
-      DEGREE: "Study Abroad - 1 Year",
+      DEGREE: "Study Abroad",
       START: "08/2017",
       END: "06/2018",
       CLASSES: [

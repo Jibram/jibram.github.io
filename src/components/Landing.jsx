@@ -1,4 +1,5 @@
 import Contacts from "./Contacts";
+import ResumeButton from "./ResumeButton";
 import content from "./content";
 
 const Landing = () => {
@@ -6,12 +7,10 @@ const Landing = () => {
     <div className="Landing">
       <div className="Greeting">
         <img className="Me" src={content.ME.PHOTO} alt={"Me"} />
-        <h1 className="Name">
-          {content.ME.FIRSTNAME}
-          <nobr>{content.ME.LASTNAME}</nobr>
-        </h1>
+        <h1 className="Name">{content.ME.FIRSTNAME}</h1>
       </div>
       <Contacts />
+      <ResumeButton />
     </div>
   );
 };

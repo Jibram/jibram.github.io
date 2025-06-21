@@ -1,0 +1,60 @@
+/* WebringMenu.css */
+
+.webring-container {
+  position: absolute; /* Changed from 'fixed' to 'absolute' */
+  top: 10px;
+  right: 25px; /* Increased to give space for the scrollbar */
+  z-index: 1000;
+  font-family: sans-serif;
+  /* Add pointer-events: none initially to prevent issues with underlying elements */
+  /* This is less common in React component if the container handles hover correctly,
+     but good to keep in mind for complex layouts. */
+}
+
+.webring-toggle {
+  display: block;
+  padding: 8px 12px;
+  background-color: #777;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer; /* Indicate it's clickable */
+}
+
+.webring-toggle:hover {
+  background-color: #2563eb;
+}
+
+.webring-toggle-clicked {
+  background-color: #2563eb;
+}
+
+.webring-links {
+  display: none; /* Hides the links by default */
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+/* This class makes the links visible */
+.webring-links.show-links {
+  display: block;
+}
+
+.webring-link {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.webring-link:hover {
+  background-color: #ddd;
+}

@@ -7,15 +7,17 @@ import Experiences from "./components/Experiences";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 
-const App = () => (
-  <div className="App">
-    <NavBar />
-    <Landing />
-    <Intro />
-    <Experiences />
-    <Education />
-    <Skills />
-  </div>
-);
+const App = () => {
+  return (
+    <div className="App">
+      <NavBar />
+      <Landing />
+      <Intro />
+      <Experiences />
+      <Education />
+      <Skills />
+    </div>
+  );
+};
 
 export default App;
