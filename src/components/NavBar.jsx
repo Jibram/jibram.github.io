@@ -50,7 +50,7 @@ const NavBar = () => {
 
   return (
     <div
-      class="webring-container"
+      className="webring-container"
       ref={menuRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -62,20 +62,20 @@ const NavBar = () => {
         }`}
         onClick={handleClickToggle}
       >
-        Webring
+        Wander
       </a>
       <div className={`webring-links ${showLinks ? "show-links" : ""}`}>
         <a
           href="https://ringdt.rapid.workers.dev/prev?from=https://jibram.net"
-          class="webring-link"
+          className="webring-link"
         >
-          prev
+          Backtrack
         </a>
         <a
           href="https://ringdt.rapid.workers.dev/next?from=https://jibram.net"
-          class="webring-link"
+          className="webring-link"
         >
-          next
+          Onwards
         </a>
       </div>
     </div>
