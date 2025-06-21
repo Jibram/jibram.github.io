@@ -15,7 +15,7 @@ var content = {
     FIRSTNAME: "Jibram ",
   },
   ABOUT:
-    "I'm a software engineer in San Francisco, CA that has 5 years of combined experience in applied artificial intelligence, machine learning, and front end.",
+    "5+ years experienced Software Engineer: Building innovative, user-centric Front-End solutions & integrating cutting-edge ML/AI to drive intelligent applications. Contact me for consultation, contract, or full-time roles.",
   CONTACT: [
     {
       SRC: gmailLogo,
