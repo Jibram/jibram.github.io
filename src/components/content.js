@@ -37,7 +37,7 @@ var content = {
     {
       LOGO: googleLogo,
       COMPANY: "Google",
-      LINK: "https://www.google.com/",
+      LINK: "https://www.google.com/travel/search",
       ROLE: "Software Engineer",
       LOCATION: "Mountain View, CA",
       START: "10/2021",

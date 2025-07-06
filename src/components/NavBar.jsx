@@ -49,7 +49,7 @@ const NavBar = () => {
   };
 
   return (
-    <div
+    <nav
       className="webring-container"
       ref={menuRef}
       onMouseEnter={handleMouseEnter}
@@ -78,7 +78,7 @@ const NavBar = () => {
           Onwards
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 
