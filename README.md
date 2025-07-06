@@ -63,13 +63,17 @@ For this project, I used GitHub Actions to set up a build and deploy pipeline. T
 ### Project Structure
 
 ```bash
-├── public/         # Static files
-├── src/            # Source code
-│   ├── assets/     # Images, fonts, etc.
-│   ├── components/ # Reusable UI components
-│   ├── App.jsx     # Main app component
-│   └── main.jsx    # Entry point
-├── index.html      # HTML template
-├── vite.config.js   # Vite config
-└── package.json    # Project metadata and scripts
+├── public/           # Static files
+├── src/              # Source code
+│   ├── components/   # Reusable UI components
+│   ├── images/       # Like assets, but visual
+│   └── main.jsx      # Entry point
+├── .prettierrc.json  # Prettier configuration
+├── CNAME             # Domain name
+├── eslint.config.js  # ESLint configuration
+├── index.html        # HTML template
+├── package.json      # Project metadata and scripts
+├── README            # This document you're reading
+└── vite.config.json  # Without this, can't run
+
 ```
