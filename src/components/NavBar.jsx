@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from "react";
-import "./NavBar.css";
+import { useState, useRef, useEffect } from 'react';
+import './NavBar.css';
 
 const NavBar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,11 +21,11 @@ const NavBar = () => {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
       // Clean up the event listener when the component unmounts
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [menuRef, isHovered, isClickedOpen]);
 
@@ -58,13 +58,13 @@ const NavBar = () => {
       <a
         href="#"
         className={`webring-toggle ${
-          isClickedOpen ? "webring-toggle-clicked" : ""
+          isClickedOpen ? 'webring-toggle-clicked' : ''
         }`}
         onClick={handleClickToggle}
       >
         Wander
       </a>
-      <div className={`webring-links ${showLinks ? "show-links" : ""}`}>
+      <div className={`webring-links ${showLinks ? 'show-links' : ''}`}>
         <a
           href="https://ringdt.rapid.workers.dev/prev?from=https://jibram.net"
           className="webring-link"

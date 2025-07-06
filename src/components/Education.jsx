@@ -1,4 +1,4 @@
-import content from "./content";
+import content from './content';
 
 const School = ({ school }) => {
   return (
@@ -12,7 +12,7 @@ const School = ({ school }) => {
         <div className="Extra">{school.EXTRA}</div>
         <div className="Date">
           {school.START}
-          {" - "}
+          {' - '}
           {school.END}
         </div>
         <ul className="Coursework">
@@ -28,7 +28,7 @@ const School = ({ school }) => {
 const Education = () => {
   return (
     <div className="Schools">
-      <h2 style={{ textAlign: "center" }}>Education</h2>
+      <h2 style={{ textAlign: 'center' }}>Education</h2>
       {content.SCHOOLS.map((school) => {
         return <School school={school} key={school.NAME} />;
       })}

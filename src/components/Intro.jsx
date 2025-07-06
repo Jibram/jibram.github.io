@@ -1,4 +1,4 @@
-import content from "./content";
+import content from './content';
 
 const Intro = () => {
   return (

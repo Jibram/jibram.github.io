@@ -1,4 +1,4 @@
-import content from "./content";
+import content from './content';
 
 const Experience = ({ exp }) => {
   return (
@@ -11,14 +11,14 @@ const Experience = ({ exp }) => {
       <div className="ExpDescription">
         <div className="Role"> {exp.ROLE} </div>
         <div className="Company">
-          {" "}
+          {' '}
           <a className="Hyperlink" href={exp.LINK}>
             {exp.COMPANY}
-          </a>{" "}
+          </a>{' '}
         </div>
         <div className="Location"> {exp.LOCATION} </div>
         <div className="Date">
-          {exp.START} {" - "} {exp.END}
+          {exp.START} {' - '} {exp.END}
         </div>
         <ul>
           {exp.INFO.map((bullet) => {
@@ -37,7 +37,7 @@ const Experience = ({ exp }) => {
 const Experiences = () => {
   return (
     <div className="Experiences">
-      <h2 style={{ textAlign: "center" }}>Experience</h2>
+      <h2 style={{ textAlign: 'center' }}>Experience</h2>
       {content.EXPERIENCES.map((experience) => {
         return (
           <Experience

@@ -13,6 +13,7 @@
 
 .webring-toggle {
   display: block;
+  height: 30px;
   padding: 8px 12px;
   background-color: #777;
   color: white;
