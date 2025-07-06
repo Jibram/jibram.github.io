@@ -1,0 +1,12 @@
+.Contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Contact {
+  height: 50px;
+  width: 50px;
+  margin: 0px 10px 0px 10px;
+}

@@ -65,9 +65,12 @@ For this project, I used GitHub Actions to set up a build and deploy pipeline. T
 ```bash
 ├── public/           # Static files
 ├── src/              # Source code
+│   ├── assets/       # Images used in components
 │   ├── components/   # Reusable UI components
-│   ├── images/       # Like assets, but visual
-│   └── main.jsx      # Entry point
+│   ├── contexts/     # Just started with a context for theme
+│   ├── pages/        # Routing with BrowserRouter
+│   ├── App.jsx/      # App entry point
+│   └── main.jsx      # Vite entry point
 ├── .prettierrc.json  # Prettier configuration
 ├── CNAME             # Domain name
 ├── eslint.config.js  # ESLint configuration

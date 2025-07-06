@@ -1,0 +1,27 @@
+.Skills {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px 40px 0px;
+}
+
+.Skill {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+
+.Skill > .Type {
+  font-size: 20pt;
+  color: #5e9516;
+  width: 50%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.Skill > .List {
+  padding-left: 0px;
+  list-style: none;
+  text-align: center;
+}

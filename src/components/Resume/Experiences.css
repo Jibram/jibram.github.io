@@ -1,0 +1,67 @@
+.Hyperlink {
+  text-decoration: none;
+}
+
+.Experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1199px) {
+  .Experiences > .Experience {
+    max-width: 85%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Experiences > .Experience > .ExpLogo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Experiences > .Experience {
+    max-width: 85%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .Experiences > .Experience > .ExpLogo {
+    display: flex;
+    align-items: center;
+    /*Vertical Alignment*/
+    margin-right: 40px;
+  }
+}
+
+.Experiences > .Experience > .ExpLogo > .LogoWrapper {
+  display: flex;
+  justify-content: center;
+  /*Horizontal Alignment*/
+}
+
+.Experiences > .Experience > .ExpLogo > .LogoWrapper > .Logo {
+  border-radius: 20%;
+  width: 300px;
+}
+
+.Experience > .ExpDescription {
+  max-width: 1000px;
+}
+
+.Experience > .ExpDescription > .Role {
+  color: #5e9516;
+  font-size: 20pt;
+}
+
+.Experience > .ExpDescription > .Company {
+  font-size: 18pt;
+}

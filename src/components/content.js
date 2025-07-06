@@ -1,13 +1,14 @@
-import mePicture from '../images/me.webp';
-import gmailLogo from '../images/gmail.webp';
-import linkedinLogo from '../images/linkedIn.webp';
-import githubLogo from '../images/github.webp';
-import ancestryLogo from '../images/ancestry.webp';
-import googleLogo from '../images/google.webp';
-import ucmcvlLogo from '../images/ucmcvl.webp';
-import palsLogo from '../images/pals.webp';
-import ucmLogo from '../images/ucmerced.webp';
-import yonseiLogo from '../images/yonsei.webp';
+import mePicture from '../assets/images/me.webp';
+import gmailLogo from '../assets/images/gmail.webp';
+import linkedinLogo from '../assets/images/linkedIn.webp';
+import githubLogo from '../assets/images/github.svg';
+import githubLogoDark from '../assets/images/github-darkmode.svg';
+import ancestryLogo from '../assets/images/ancestry.webp';
+import googleLogo from '../assets/images/google.webp';
+import ucmcvlLogo from '../assets/images/ucmcvl.webp';
+import palsLogo from '../assets/images/pals.webp';
+import ucmLogo from '../assets/images/ucmerced.webp';
+import yonseiLogo from '../assets/images/yonsei.webp';
 
 var content = {
   ME: {
@@ -29,6 +30,7 @@ var content = {
     },
     {
       SRC: githubLogo,
+      SRCDARK: githubLogoDark,
       ALT: 'GitHub',
       HREF: 'https://www.github.com/Jibram',
     },

@@ -1,4 +1,6 @@
-import content from './content';
+import './Skills.css';
+
+import content from '../content';
 
 const Skills = () => (
   <div className="Skills">

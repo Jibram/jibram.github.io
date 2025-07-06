@@ -1,0 +1,47 @@
+.Schools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 40px 0px;
+  width: 100%;
+}
+
+.School {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 20px 0px 20px 0px;
+}
+
+.School > .Left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.School > .Left > .Logo {
+  width: 300px;
+  border-radius: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+.School > .Right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.School > .Right > .Coursework {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.School > .Right > .Name {
+  font-size: 20pt;
+  color: #5e9516;
+}

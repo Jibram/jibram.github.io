@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
-import './NavBar.css';
+import './WebRing.css';
 
-const NavBar = () => {
+const WebRing = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isClickedOpen, setIsClickedOpen] = useState(false);
   // Ref to the container div for detecting clicks outside
@@ -49,7 +49,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav
+    <div
       className="webring-container"
       ref={menuRef}
       onMouseEnter={handleMouseEnter}
@@ -69,17 +69,17 @@ const NavBar = () => {
           href="https://ringdt.rapid.workers.dev/prev?from=https://jibram.net"
           className="webring-link"
         >
-          Backtrack
+          <div className="backward">Backward</div>
         </a>
         <a
           href="https://ringdt.rapid.workers.dev/next?from=https://jibram.net"
           className="webring-link"
         >
-          Onwards
+          <div className="onward">Onward</div>
         </a>
       </div>
-    </nav>
+    </div>
   );
 };
 
-export default NavBar;
+export default WebRing;

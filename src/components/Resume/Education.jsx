@@ -1,4 +1,7 @@
-import content from './content';
+import './Education.css';
+
+import content from '../content';
+import { useTheme } from '../../contexts/ThemeContext';
 
 const School = ({ school }) => {
   return (
@@ -26,8 +29,9 @@ const School = ({ school }) => {
 };
 
 const Education = () => {
+  const { theme } = useTheme();
   return (
-    <div className="Schools">
+    <div className={`Schools ${theme}-theme-alt`}>
       <h2 style={{ textAlign: 'center' }}>Education</h2>
       {content.SCHOOLS.map((school) => {
         return <School school={school} key={school.NAME} />;

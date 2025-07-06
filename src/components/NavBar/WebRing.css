@@ -1,0 +1,115 @@
+.webring-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.webring-toggle {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer; /* Indicate it's clickable */
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+  border: none;
+  outline: none;
+}
+
+.webring-toggle:hover,
+.webring-toggle-clicked {
+  background-color: #1741a6;
+}
+
+.webring-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  z-index: 10;
+}
+
+/* This class makes the links visible */
+.webring-links.show-links {
+  display: block;
+}
+
+.webring-link {
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.webring-link:hover {
+  background-color: #444 !important;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(140%);
+  }
+  100% {
+    transform: translateX(-140%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-140%);
+  }
+  100% {
+    transform: translateX(140%);
+  }
+}
+
+.backward {
+  animation: scroll-left 4s linear infinite;
+}
+
+.onward {
+  animation: scroll-right 4s linear infinite;
+}
+
+@media (max-width: 500px) {
+  .webring-links {
+    width: 100%;
+  }
+  .webring-link {
+    text-align: left;
+    padding: 0.5rem 0px !important;
+  }
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(80%);
+    }
+    100% {
+      transform: translateX(-80%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-80%);
+    }
+    100% {
+      transform: translateX(80%);
+    }
+  }
+
+  .backward {
+    animation: scroll-left 5s linear infinite;
+  }
+
+  .onward {
+    animation: scroll-right 5s linear infinite;
+  }
+}

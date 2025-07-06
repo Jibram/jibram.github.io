@@ -1,0 +1,25 @@
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutMe > .Greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutMe > .Greeting > .Me {
+  border-radius: 50%;
+  margin-top: 40px;
+  width: 300px;
+  max-width: 85%;
+}
+
+.AboutMe > .Greeting > .Name {
+  text-align: center;
+  max-width: 85%;
+  text-wrap: nowrap;
+}

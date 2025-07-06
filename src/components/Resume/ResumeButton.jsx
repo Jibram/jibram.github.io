@@ -6,7 +6,7 @@ const ResumeButton = () => {
       <a
         href="/pdfs/Resume_Jibram.pdf"
         download="Resume_Jibram.pdf"
-        className="modern-download-button"
+        className="ResumeDownloadButton"
       >
         Download Resume
       </a>

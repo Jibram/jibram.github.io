@@ -1,9 +1,7 @@
 /* Modern Download Resume Button CSS */
-.modern-download-button {
+.ResumeDownloadButton {
   /* Layout & Sizing */
-  display: inline-flex; /* Allows content centering within the button */
-  align-items: center; /* Vertically centers text/icon */
-  justify-content: center; /* Horizontally centers text/icon */
+  text-align: center;
   padding: 10px 20px; /* Generous padding for a comfortable click area */
   min-width: 120px; /* Ensures a minimum width for consistency */
 
@@ -16,7 +14,7 @@
   text-decoration: none; /* Removes underline from anchor tag */
 
   /* Typography */
-  font-weight: 400; /* Semi-bold text */
+  font-weight: 500; /* Semi-bold text */
   letter-spacing: 0.5px; /* A little space between letters for readability */
 
   /* Shadows & Transitions for interactivity */
@@ -28,14 +26,14 @@
 }
 
 /* Hover effect: Subtle lift and color change */
-.modern-download-button:hover {
+.ResumeDownloadButton:hover {
   background-color: #2563eb; /* Darker blue on hover (Tailwind's blue-600) */
   transform: translateY(-3px); /* Lifts the button slightly */
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4); /* More pronounced shadow */
 }
 
 /* Active effect: "Press" feeling */
-.modern-download-button:active {
+.ResumeDownloadButton:active {
   background-color: #1d4ed8; /* Even darker blue when clicked (Tailwind's blue-700) */
   transform: translateY(0); /* Button returns to original position */
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2); /* Smaller shadow */
@@ -43,4 +41,6 @@
 
 .ResumeDownloadWrapper {
   margin: 20px;
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
 }

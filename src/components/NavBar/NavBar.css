@@ -1,0 +1,108 @@
+/* WebringMenu.css */
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 0 2rem;
+  height: 56px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.navBar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navBar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+
+.navBar a:hover {
+  background: #444;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+.hamburger-bar {
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+@media (max-width: 500px) {
+  .navBar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 1rem;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navBar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #222;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    gap: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  .navBar-links.open {
+    display: flex;
+  }
+  .navBar-links a,
+  .navBar-links .webring-container {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    border-bottom: 1px solid #333;
+  }
+  .navBar-links a:last-child,
+  .navBar-links .webring-container:last-child {
+    border-bottom: none;
+  }
+}
+
+.navBar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+.navBar a:hover {
+  background: #444;
+}

@@ -1,8 +1,11 @@
-import content from './content';
+import './Experiences.css';
+
+import content from '../content';
+import { useTheme } from '../../contexts/ThemeContext';
 
 const Experience = ({ exp }) => {
   return (
-    <div className="Experience">
+    <div className={'Experience'}>
       <div className="ExpLogo">
         <a className="LogoWrapper" href={exp.LINK}>
           <img className="Logo" src={exp.LOGO} />
@@ -35,8 +38,9 @@ const Experience = ({ exp }) => {
 };
 
 const Experiences = () => {
+  const { theme } = useTheme();
   return (
-    <div className="Experiences">
+    <div className={`Experiences ${theme}-theme`}>
       <h2 style={{ textAlign: 'center' }}>Experience</h2>
       {content.EXPERIENCES.map((experience) => {
         return (
