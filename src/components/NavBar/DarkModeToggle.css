@@ -17,7 +17,6 @@
   border-radius: 6px;
   transition: background 0.2s;
   font-weight: 500;
-  border-bottom: 1px solid #333;
   width: 100%;
   text-align: center;
 }
@@ -37,4 +36,10 @@
 
 .fadeText {
   animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .DarkModeToggleButton {
+    border-bottom: 1px solid #333;
+  }
 }
