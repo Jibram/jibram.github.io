@@ -12,10 +12,6 @@ No use case yet.
 
 State management... but I use constant.json that's already static. Not really info I want to request and store in state per se
 
-## React-router-dom
-
-Perhaps I can make a page that uses Axios and route to it.
-
 ## Vitest
 
 Test suite replacing jest, possibly better since this is a Vite project.
