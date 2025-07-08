@@ -59,7 +59,6 @@
 @media (max-width: 500px) {
   .navBar {
     flex-wrap: wrap;
-    height: auto;
     padding: 0 1rem;
   }
   .hamburger {
