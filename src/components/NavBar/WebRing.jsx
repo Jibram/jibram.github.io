@@ -62,7 +62,7 @@ const WebRing = () => {
         }`}
         onClick={handleClickToggle}
       >
-        Wander
+        Web Ring
       </a>
       <div className={`webring-links ${showLinks ? 'show-links' : ''}`}>
         <a

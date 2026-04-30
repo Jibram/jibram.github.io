@@ -2,7 +2,6 @@ import './NavBar.css';
 
 import { useState } from 'react';
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import DarkModeToggle from './DarkModeToggle';
 import WebRing from './WebRing';
 
@@ -36,8 +35,6 @@ const NavBar = () => {
         <span className="hamburger-bar" />
       </button>
       <div className={`navBar-links${menuOpen ? ' open' : ''}`}>
-        <Link to="/">Home</Link>
-        <Link to="/resume">Hire Me</Link>
         <DarkModeToggle />
         <WebRing />
       </div>

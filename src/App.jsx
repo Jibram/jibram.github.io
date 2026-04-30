@@ -2,7 +2,6 @@ import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import Landing from './pages/Landing';
 import Resume from './pages/Resume';
 
 const App = () => {
@@ -10,8 +9,7 @@ const App = () => {
     <div className="app">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/" element={<Resume />} />
         {/* Add more routes here as needed */}
         {/* Example: <Route path="/about" element={<About />} /> */}
       </Routes>
