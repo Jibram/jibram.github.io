@@ -16,7 +16,7 @@ var content = {
     NAME: 'Jibram Jimenez-Loza',
   },
   ABOUT:
-    '5+ years experienced Software Engineer: Building innovative, user-centric Front-End solutions & integrating cutting-edge ML/AI to drive intelligent applications. Contact me for consultation, contract, or full-time roles.',
+    'Full-Stack ML Engineer with 5 years of experience building production-scale MLOps pipelines (Google) and full-stack web applications (Ancestry). Proven ability to train deep neural networks (DNNs) and deploy them into end-to-end, user-facing systems.',
   CONTACT: [
     {
       SRC: gmailLogo,
@@ -45,10 +45,10 @@ var content = {
       START: '10/2021',
       END: '11/2024',
       INFO: [
-        'Launched several ads auction improvements on the Travel Ads team for over 2.5% revenue gains ($XX M).',
-        'Empowered DNN models via feature engineering to improve accuracy by over 10% on different surfaces as the team expanded to many more verticals.',
-        'Leveraged Vizier to create a simulation pipeline to tune hyperparameters in models after each release, selecting better configurations than would be in manual tuning.',
-        'Advocated and implemented region-specific modeling to reach goals without negatively affecting small GEOs.',
+        'Engineered ML-driven reserve pricing models to optimize yield in sparse auction environments, improving market efficiency and driving over 2.5% in revenue gains ($10M+).',
+        `Extended large-scale data and MLOps pipelines for Deep Neural Networks (DNNs) using Google's C++ distributed framework Flume and TFX, improving accuracy by 10% across new verticals.`,
+        'Automated hyperparameter tuning (Google Vizier / Bayesian Optimization) by creating a simulation pipeline to evaluate model configurations post-release, saving 10 dev-hours per cycle.',
+        'Deployed region-specific model architectures, optimizing inference and ad ranking for targeted geographies to maximize click-through rate (CTR) and revenue.',
       ],
     },
     {
@@ -60,11 +60,9 @@ var content = {
       START: '01/2020',
       END: '10/2021',
       INFO: [
-        'Engineered modern single page e-commerce applications with Javascript, React, and NodeJS.',
-        'Produced upticks in conversion rate with user-enabling features right from the checkout flow.',
-        'Established a new stack for an internal tool, lowering 3rd-party expenditures by the company.',
-        'Continuously improved and deployed safer and more efficient code for the Commerce Front-End team',
-        'Promoted to Software Engineer in October 2021',
+        'Optimized checkout UX through iterative experiments on component design, improving conversion rates.',
+        'Contributed to over 5% user growth with GTM features, empowering users in new international markets.',
+        'Maintained regex-based input validation for checkout forms, improving data accuracy and preventing invalid submissions.',
       ],
     },
     {
@@ -76,10 +74,8 @@ var content = {
       START: '05/2019',
       END: '08/2019',
       INFO: [
-        'Developed on the Commerce Front-End team using Javascript, React, Redux, and Flow.',
-        'Assisted Commerce team in developing, testing, and debugging checkout platform for Ancestry products.',
-        'Communicated effectively with product managers through Agile for iterative and incremental development.',
-        'Reduced size and page load time by over 30% by replacing dependencies with lightweight components.',
+        'Built and shipped frontend UI components and user flows for the Commerce platform using React, Redux, and JavaScript.',
+        'Raised core component library code coverage to over 90% with Jest and Cypress, and reduced page load time by 30% by replacing 3rd party dependencies.',
       ],
     },
     {
@@ -91,8 +87,7 @@ var content = {
       START: '02/2019',
       END: '05/2019',
       INFO: [
-        'Conducted research for tracking bird species by mapping audio files into spectrogram images using Python.',
-        'Investigated differences between feature extraction techniques to CNN pre-classification feature vectors.',
+        'In pursuit of identifying bird species by their song alone, researched the impact of converting audio files into visual data (spectrograms) in order to be classified by CNNs in PyTorch.',
       ],
     },
     {
@@ -120,8 +115,7 @@ var content = {
       CLASSES: [
         'Algorithm Analysis',
         'Computer Networks',
-        'Object-Oriented Programming',
-        'Networks and Distributed Systems',
+        'Distributed Systems',
       ],
     },
     {
