@@ -4,10 +4,5 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/', // Ensure this is set to '/' for user/organization pages
-  server: {
-    proxy: {
-      '/api': 'http://localhost:3000',
-    },
-  },
+  base: '/',
 });
