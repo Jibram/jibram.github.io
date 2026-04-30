@@ -7,7 +7,7 @@ const Me = () => {
     <div className="AboutMe">
       <div className="Greeting">
         <img className="Me" src={content.ME.PHOTO} alt={'Me'} />
-        <h1 className="Name">{content.ME.FIRSTNAME}</h1>
+        <h1 className="Name">{content.ME.NAME}</h1>
       </div>
     </div>
   );
