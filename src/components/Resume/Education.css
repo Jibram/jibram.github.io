@@ -2,46 +2,72 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0;
   width: 100%;
 }
 
 .School {
-  display: flex;
-  flex-direction: column;
   width: 85%;
-  padding: 20px 0px 20px 0px;
+  max-width: 900px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
 }
 
-.School > .Left {
+.School:last-child {
+  border-bottom: none;
+}
+
+.SchoolHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.School > .SchoolHeader > .Logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .School > .SchoolHeader > .Logo {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+.SchoolMeta {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 4px;
 }
 
-.School > .Left > .Logo {
-  width: 300px;
-  border-radius: 20%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 0px;
-}
-
-.School > .Right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.School > .Right > .Coursework {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  padding-left: 0px;
-}
-
-.School > .Right > .Name {
-  font-size: 20pt;
+.SchoolMeta > .Name {
+  font-size: 18pt;
   color: #5e9516;
+  line-height: 1.2;
+}
+
+.SchoolMeta > .Degree {
+  font-size: 14pt;
+}
+
+.SchoolMeta > .Extra,
+.SchoolMeta > .Date {
+  font-size: 11pt;
+  opacity: 0.75;
+}
+
+.School > .Coursework {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.School > .Coursework > li {
+  margin-bottom: 6px;
+  line-height: 1.5;
 }

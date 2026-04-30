@@ -1,4 +1,4 @@
-import mePicture from '../assets/images/me.webp';
+import mePicture from '../assets/images/me.jpg';
 import gmailLogo from '../assets/images/gmail.webp';
 import linkedinLogo from '../assets/images/linkedIn.webp';
 import githubLogo from '../assets/images/github.svg';
@@ -13,7 +13,7 @@ import yonseiLogo from '../assets/images/yonsei.webp';
 var content = {
   ME: {
     PHOTO: mePicture,
-    FIRSTNAME: 'Jibram ',
+    NAME: 'Jibram Jimenez-Loza',
   },
   ABOUT:
     '5+ years experienced Software Engineer: Building innovative, user-centric Front-End solutions & integrating cutting-edge ML/AI to drive intelligent applications. Contact me for consultation, contract, or full-time roles.',

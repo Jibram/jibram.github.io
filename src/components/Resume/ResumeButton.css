@@ -1,46 +1,32 @@
-/* Modern Download Resume Button CSS */
-.ResumeDownloadButton {
-  /* Layout & Sizing */
-  text-align: center;
-  padding: 10px 20px; /* Generous padding for a comfortable click area */
-  min-width: 120px; /* Ensures a minimum width for consistency */
-
-  /* Appearance */
-  background-color: #777;
-  color: #ffffff; /* White text for contrast */
-  border: none; /* No default border */
-  border-radius: 10px; /* Slightly more rounded corners for softness */
-  cursor: pointer; /* Indicates interactivity */
-  text-decoration: none; /* Removes underline from anchor tag */
-
-  /* Typography */
-  font-weight: 500; /* Semi-bold text */
-  letter-spacing: 0.5px; /* A little space between letters for readability */
-
-  /* Shadows & Transitions for interactivity */
-  box-shadow: 0 5px 15px rgba(77, 77, 77, 0.3); /* Soft shadow for depth */
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease,
-    box-shadow 0.3s ease; /* Smooth animations for hover/active states */
-}
-
-/* Hover effect: Subtle lift and color change */
-.ResumeDownloadButton:hover {
-  background-color: #2563eb; /* Darker blue on hover (Tailwind's blue-600) */
-  transform: translateY(-3px); /* Lifts the button slightly */
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4); /* More pronounced shadow */
-}
-
-/* Active effect: "Press" feeling */
-.ResumeDownloadButton:active {
-  background-color: #1d4ed8; /* Even darker blue when clicked (Tailwind's blue-700) */
-  transform: translateY(0); /* Button returns to original position */
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2); /* Smaller shadow */
-}
-
 .ResumeDownloadWrapper {
   margin: 20px;
   display: flex;
-  justify-content: center; /* Centers the button horizontally */
+  justify-content: center;
+}
+
+.ResumeDownloadButton {
+  text-align: center;
+  padding: 10px 24px;
+  background-color: #5e9516;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(94, 149, 22, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ResumeDownloadButton:hover {
+  background-color: #4a7711;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(94, 149, 22, 0.4);
+}
+
+.ResumeDownloadButton:active {
+  background-color: #3a5e0d;
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(94, 149, 22, 0.2);
 }

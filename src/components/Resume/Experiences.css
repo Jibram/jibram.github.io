@@ -8,60 +8,71 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 1199px) {
-  .Experiences > .Experience {
-    max-width: 85%;
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Experiences > .Experience > .ExpLogo {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-  }
+.Experience {
+  width: 85%;
+  max-width: 900px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
 }
 
-@media only screen and (min-width: 1200px) {
-  .Experiences > .Experience {
-    max-width: 85%;
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 0px 20px 0px;
-  }
-
-  .Experiences > .Experience > .ExpLogo {
-    display: flex;
-    align-items: center;
-    /*Vertical Alignment*/
-    margin-right: 40px;
-  }
+.Experience:last-child {
+  border-bottom: none;
 }
 
-.Experiences > .Experience > .ExpLogo > .LogoWrapper {
+.ExpHeader {
   display: flex;
-  justify-content: center;
-  /*Horizontal Alignment*/
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 16px;
 }
 
-.Experiences > .Experience > .ExpLogo > .LogoWrapper > .Logo {
-  border-radius: 20%;
-  width: 300px;
+.LogoLink {
+  flex-shrink: 0;
 }
 
-.Experience > .ExpDescription {
-  max-width: 1000px;
+.Logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
-.Experience > .ExpDescription > .Role {
+@media (min-width: 768px) {
+  .Logo {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+.ExpMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ExpMeta > .Role {
   color: #5e9516;
-  font-size: 20pt;
+  font-size: 18pt;
+  line-height: 1.2;
 }
 
-.Experience > .ExpDescription > .Company {
-  font-size: 18pt;
+.ExpMeta > .Company {
+  font-size: 14pt;
+}
+
+.ExpMeta > .Location,
+.ExpMeta > .Date {
+  font-size: 11pt;
+  opacity: 0.75;
+}
+
+.Bullets {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.Bullets > .Bullet {
+  margin-bottom: 6px;
+  line-height: 1.5;
 }

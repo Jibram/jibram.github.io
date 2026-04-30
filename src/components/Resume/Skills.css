@@ -1,27 +1,37 @@
 .Skills {
   display: flex;
   flex-direction: column;
-  padding: 40px 0px 40px 0px;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 0;
 }
 
 .Skill {
-  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 60%;
   align-items: center;
+  gap: 12px;
+  width: 85%;
+  max-width: 700px;
 }
 
 .Skill > .Type {
-  font-size: 20pt;
+  font-size: 18pt;
   color: #5e9516;
-  width: 50%;
-  min-width: 300px;
-  text-align: center;
 }
 
-.Skill > .List {
-  padding-left: 0px;
-  list-style: none;
-  text-align: center;
+.Pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.Pill {
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid #5e9516;
+  color: #5e9516;
+  font-size: 11pt;
+  line-height: 1.6;
 }
