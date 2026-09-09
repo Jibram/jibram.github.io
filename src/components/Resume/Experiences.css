@@ -38,10 +38,26 @@
   border-radius: 12px;
 }
 
+.Logo.Monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #5e9516;
+  background: rgba(94, 149, 22, 0.12);
+  border: 1px solid rgba(94, 149, 22, 0.35);
+}
+
 @media (min-width: 768px) {
   .Logo {
     width: 96px;
     height: 96px;
+  }
+
+  .Logo.Monogram {
+    font-size: 34px;
   }
 }
 
@@ -75,4 +91,14 @@
 .Bullets > .Bullet {
   margin-bottom: 6px;
   line-height: 1.5;
+}
+
+.BulletLink {
+  color: #5e9516;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.BulletLink:hover {
+  opacity: 0.8;
 }

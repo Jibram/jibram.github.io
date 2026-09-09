@@ -5,10 +5,9 @@ import githubLogo from '../assets/images/github.svg';
 import githubLogoDark from '../assets/images/github-darkmode.svg';
 import ancestryLogo from '../assets/images/ancestry.webp';
 import googleLogo from '../assets/images/google.webp';
+import datavantLogo from '../assets/images/datavant.webp';
 import ucmcvlLogo from '../assets/images/ucmcvl.webp';
-import palsLogo from '../assets/images/pals.webp';
 import ucmLogo from '../assets/images/ucmerced.webp';
-import yonseiLogo from '../assets/images/yonsei.webp';
 
 var content = {
   ME: {
@@ -16,7 +15,7 @@ var content = {
     NAME: 'Jibram Jimenez-Loza',
   },
   ABOUT:
-    'Full-Stack ML Engineer with 5 years of experience building production-scale MLOps pipelines (Google) and full-stack web applications (Ancestry). Proven ability to train deep neural networks (DNNs) and deploy them into end-to-end, user-facing systems.',
+    'Software and ML engineer with 6+ years of experience delivering production ML, data, and full-stack systems. Built revenue-impacting ranking and MLOps infrastructure at Google, customer-data ingestion workflows at Datavant, and web/application foundations for early-stage products.',
   CONTACT: [
     {
       SRC: gmailLogo,
@@ -37,9 +36,51 @@ var content = {
   ],
   EXPERIENCES: [
     {
+      MONOGRAM: 'NH',
+      COMPANY: 'Nob Hill Labs',
+      LINK: 'https://www.letta.com/',
+      ROLE: 'Senior Software Engineer (Contract — Letta.ai)',
+      LOCATION: 'San Francisco, CA',
+      START: '08/2026',
+      END: 'Present',
+      INFO: [
+        'Built and integrated a packaged smoke-test stage into the Letta desktop app release pipeline; caught and fixed a Linux regression and established automated gating before production promotion.',
+      ],
+    },
+    {
+      MONOGRAM: 'HC',
+      COMPANY: 'HumaniCore / Chelys',
+      LINK: 'https://www.humanicore.ai/',
+      ROLE: 'Independent Software Engineer',
+      LOCATION: 'San Francisco, CA',
+      START: '03/2026',
+      END: 'Present',
+      LINKS: {
+        'humanicore.ai': 'https://www.humanicore.ai/',
+        'chelys.io': 'https://chelys.io/',
+      },
+      INFO: [
+        'Built and deployed the humanicore.ai and chelys.io websites, configuring DNS, GitHub-connected Vercel preview and production deployments, and initial AWS/Supabase services.',
+        'Implemented an Astro server-side user-submission flow with input scrubbing and rate limiting; contributed early technical and product-direction input for both pre-seed initiatives.',
+      ],
+    },
+    {
+      LOGO: datavantLogo,
+      COMPANY: 'Datavant',
+      LINK: 'https://datavant.com/',
+      ROLE: 'Software Engineer',
+      LOCATION: 'San Francisco, CA',
+      START: '09/2025',
+      END: '11/2025',
+      INFO: [
+        'Extended a customer data-ingestion workflow for a client-specific schema, including Snowflake-backed data loading, database migrations, and intermediate-table transformations for a production searchable database.',
+        'Integrated the new data with an existing customer-matching and heuristic-ranking workflow across Python/FastAPI services, AWS RDS, and Snowflake.',
+      ],
+    },
+    {
       LOGO: googleLogo,
       COMPANY: 'Google',
-      LINK: 'https://www.google.com/travel/search',
+      LINK: 'https://www.google.com/',
       ROLE: 'Software Engineer',
       LOCATION: 'Mountain View, CA',
       START: '10/2021',
@@ -84,23 +125,10 @@ var content = {
       LINK: 'http://vision.ucmerced.edu/',
       ROLE: 'Undergraduate Researcher',
       LOCATION: 'Merced, CA',
-      START: '02/2019',
+      START: '01/2019',
       END: '05/2019',
       INFO: [
-        'In pursuit of identifying bird species by their song alone, researched the impact of converting audio files into visual data (spectrograms) in order to be classified by CNNs in PyTorch.',
-      ],
-    },
-    {
-      LOGO: palsLogo,
-      COMPANY: 'Bright Success Center at UCMerced',
-      LINK: 'https://learning.ucmerced.edu/programs/tutoring',
-      ROLE: 'Peer Assistant for Math and Computer Science',
-      LOCATION: 'Merced, CA',
-      START: '02/2017',
-      END: '05/2019',
-      INFO: [
-        'Tutored university level students math, object-oriented programming, data structures, and algorithms.',
-        'Helped over 50 students every semester with noticeable increase in grades after attending my sessions.',
+        'Researched converting audio recordings into spectrograms for bird-species classification with convolutional neural networks in PyTorch.',
       ],
     },
   ],
@@ -108,7 +136,7 @@ var content = {
     {
       LOGO: ucmLogo,
       NAME: 'University of California, Merced',
-      DEGREE: 'BSc in Computer Science',
+      DEGREE: 'BSc in Computer Science and Engineering',
       EXTRA: 'Honors (3.6 GPA)',
       START: '08/2016',
       END: '12/2019',
@@ -118,35 +146,28 @@ var content = {
         'Distributed Systems',
       ],
     },
-    {
-      LOGO: yonseiLogo,
-      NAME: 'Yonsei University, Seoul',
-      DEGREE: 'Study Abroad',
-      START: '08/2017',
-      END: '06/2018',
-      CLASSES: [
-        'Artificial Intelligence',
-        'Computer Vision',
-        'Data Structures',
-        'Theory of Computation',
-      ],
-    },
   ],
   SKILLS: {
-    LANGUAGES: ['Javascript', 'Python', 'C++', 'SQL', 'Java', 'Matlab'],
+    LANGUAGES: ['JavaScript / TypeScript', 'Python', 'C++', 'SQL'],
     TECHNOLOGIES: [
-      'Tensorflow',
+      'TensorFlow',
       'TFX',
-      'OpenCV',
-      'Scikit',
-      'GWS',
+      'Pandas',
+      'scikit-learn',
+      'Snowflake',
+      'AWS',
+      'AWS RDS',
+      'GCP',
+      'FastAPI',
+      'Supabase',
+      'Vercel',
+      'Astro',
       'gRPC',
-      'React.js',
       'Node.js',
-      'Redux.js',
+      'React',
+      'Redux',
       'Jest',
       'Cypress',
-      'Jenkins',
     ],
     MISC: ['English 🇺🇸', 'Español 🇲🇽', '한국어 🇰🇷'],
   },
