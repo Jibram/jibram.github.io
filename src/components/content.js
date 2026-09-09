@@ -48,15 +48,19 @@ var content = {
       ],
     },
     {
-      MONOGRAM: 'CH',
-      COMPANY: 'Chelys / HumaniCore',
-      LINK: 'https://chelys.io/',
+      MONOGRAM: 'HC',
+      COMPANY: 'HumaniCore / Chelys',
+      LINK: 'https://www.humanicore.ai/',
       ROLE: 'Independent Software Engineer',
       LOCATION: 'San Francisco, CA',
       START: '03/2026',
       END: 'Present',
+      LINKS: {
+        'humanicore.ai': 'https://www.humanicore.ai/',
+        'chelys.io': 'https://chelys.io/',
+      },
       INFO: [
-        'Built and deployed the chelys.io and humanicore.ai websites, configuring DNS, GitHub-connected Vercel preview and production deployments, and initial AWS/Supabase services.',
+        'Built and deployed the humanicore.ai and chelys.io websites, configuring DNS, GitHub-connected Vercel preview and production deployments, and initial AWS/Supabase services.',
         'Implemented an Astro server-side user-submission flow with input scrubbing and rate limiting; contributed early technical and product-direction input for both pre-seed initiatives.',
       ],
     },
