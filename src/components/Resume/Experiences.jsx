@@ -43,24 +43,34 @@ const linkify = (text, links) => {
 };
 
 const Experience = ({ exp }) => {
+  const logo = exp.LOGO ? (
+    <img className="Logo" src={exp.LOGO} alt={exp.COMPANY} />
+  ) : (
+    <span className="Logo Monogram" role="img" aria-label={exp.COMPANY}>
+      {exp.MONOGRAM}
+    </span>
+  );
+
   return (
     <div className="Experience">
       <div className="ExpHeader">
-        <a href={exp.LINK} className="LogoLink">
-          {exp.LOGO ? (
-            <img className="Logo" src={exp.LOGO} alt={exp.COMPANY} />
-          ) : (
-            <span className="Logo Monogram" role="img" aria-label={exp.COMPANY}>
-              {exp.MONOGRAM}
-            </span>
-          )}
-        </a>
+        {exp.LINK ? (
+          <a href={exp.LINK} className="LogoLink">
+            {logo}
+          </a>
+        ) : (
+          <span className="LogoLink">{logo}</span>
+        )}
         <div className="ExpMeta">
           <div className="Role">{exp.ROLE}</div>
           <div className="Company">
-            <a className="Hyperlink" href={exp.LINK}>
-              {exp.COMPANY}
-            </a>
+            {exp.LINK ? (
+              <a className="Hyperlink" href={exp.LINK}>
+                {exp.COMPANY}
+              </a>
+            ) : (
+              exp.COMPANY
+            )}
           </div>
           <div className="Location">{exp.LOCATION}</div>
           <div className="Date">

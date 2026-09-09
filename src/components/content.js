@@ -38,8 +38,8 @@ var content = {
     {
       MONOGRAM: 'NH',
       COMPANY: 'Nob Hill Labs',
-      LINK: 'https://www.letta.com/',
-      ROLE: 'Senior Software Engineer (Contract — Letta.ai)',
+      LINK: 'https://nobhill.dev/',
+      ROLE: 'Senior Software Engineer, Contract client: Letta.ai',
       LOCATION: 'San Francisco, CA',
       START: '08/2026',
       END: 'Present',
