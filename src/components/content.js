@@ -15,7 +15,7 @@ var content = {
     NAME: 'Jibram Jimenez-Loza',
   },
   ABOUT:
-    'Software and ML engineer with 6+ years of experience delivering production ML, data, and full-stack systems. Built revenue-impacting ranking and MLOps infrastructure at Google, customer-data ingestion workflows at Datavant, and web/application foundations for early-stage products.',
+    'Software and ML engineer with 5+ years of experience delivering production ML, data, and full-stack systems. Built revenue-impacting ranking and MLOps infrastructure at Google, customer-data ingestion workflows at Datavant, and web/application foundations for early-stage products.',
   CONTACT: [
     {
       SRC: gmailLogo,
@@ -147,29 +147,29 @@ var content = {
       ],
     },
   ],
+  // Each list is split into clusters, strongest/most-central first. The UI
+  // renders clusters inline, separated by a middot, with no sub-headings.
   SKILLS: {
-    LANGUAGES: ['JavaScript / TypeScript', 'Python', 'C++', 'SQL'],
-    TECHNOLOGIES: [
-      'TensorFlow',
-      'TFX',
-      'Pandas',
-      'scikit-learn',
-      'Snowflake',
-      'AWS',
-      'AWS RDS',
-      'GCP',
-      'FastAPI',
-      'Supabase',
-      'Vercel',
-      'Astro',
-      'gRPC',
-      'Node.js',
-      'React',
-      'Redux',
-      'Jest',
-      'Cypress',
+    LANGUAGES: [
+      ['Python', 'C++'],
+      ['SQL', 'JavaScript / TypeScript'],
     ],
-    MISC: ['English 🇺🇸', 'Español 🇲🇽', '한국어 🇰🇷'],
+    TECHNOLOGIES: [
+      ['TensorFlow', 'TFX', 'Pandas', 'scikit-learn', 'Snowflake'],
+      [
+        'AWS',
+        'AWS RDS',
+        'GCP',
+        'FastAPI',
+        'gRPC',
+        'Node.js',
+        'Supabase',
+        'Vercel',
+        'Astro',
+      ],
+      ['React', 'Redux', 'Jest', 'Cypress'],
+    ],
+    SPOKEN: [['English 🇺🇸', 'Español 🇲🇽', '한국어 🇰🇷']],
   },
   AWARDS: [],
 };
