@@ -4,8 +4,8 @@ const ResumeButton = () => {
   return (
     <div className="ResumeDownloadWrapper">
       <a
-        href="/pdfs/Resume_JibramJimenezLoza.pdf"
-        download="Resume_JibramJimenezLoza.pdf"
+        href="/pdfs/Resume_Jibram.pdf"
+        download="Resume_Jibram.pdf"
         className="ResumeDownloadButton"
       >
         Download Resume

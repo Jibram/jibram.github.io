@@ -6,7 +6,6 @@ import githubLogoDark from '../assets/images/github-darkmode.svg';
 import ancestryLogo from '../assets/images/ancestry.webp';
 import googleLogo from '../assets/images/google.webp';
 import datavantLogo from '../assets/images/datavant.webp';
-import ucmcvlLogo from '../assets/images/ucmcvl.webp';
 import ucmLogo from '../assets/images/ucmerced.webp';
 
 var content = {
@@ -15,7 +14,7 @@ var content = {
     NAME: 'Jibram Jimenez-Loza',
   },
   ABOUT:
-    'Software and ML engineer with 5+ years of experience delivering production ML, data, and full-stack systems. Built revenue-impacting ranking and MLOps infrastructure at Google, customer-data ingestion workflows at Datavant, and web/application foundations for early-stage products.',
+    'Versatile Software Engineer with 5+ years of experience building scalable production systems and early-stage infrastructure. Proven track record at Google generating $10M+ in revenue through ML-driven pricing models and optimizing MLOps pipelines. Experienced in both high-scale distributed systems and rapid, independent product development. Skilled in Python, JavaScript, C++, and cloud-native architecture, with a focus on ownership, reliability, and measurable business impact.',
   CONTACT: [
     {
       SRC: gmailLogo,
@@ -39,7 +38,7 @@ var content = {
       MONOGRAM: 'NH',
       COMPANY: 'Nob Hill Labs',
       LINK: 'https://nobhill.dev/',
-      ROLE: 'Senior Software Engineer, Contract client: Letta.ai',
+      ROLE: 'Senior Software Engineer (Contracting for Letta)',
       LOCATION: 'San Francisco, CA',
       START: '08/2026',
       END: 'Present',
@@ -86,10 +85,10 @@ var content = {
       START: '10/2021',
       END: '11/2024',
       INFO: [
-        'Engineered ML-driven reserve pricing models to optimize yield in sparse auction environments, improving market efficiency and driving over 2.5% in revenue gains ($10M+).',
-        `Extended large-scale data and MLOps pipelines for Deep Neural Networks (DNNs) using Google's C++ distributed framework Flume and TFX, improving accuracy by 10% across new verticals.`,
-        'Automated hyperparameter tuning (Google Vizier / Bayesian Optimization) by creating a simulation pipeline to evaluate model configurations post-release, saving 10 dev-hours per cycle.',
-        'Deployed region-specific model architectures, optimizing inference and ad ranking for targeted geographies to maximize click-through rate (CTR) and revenue.',
+        'Engineered ML-driven reserve-pricing models for sparse auction environments, improving market efficiency and generating 2.5%+ revenue lift ($10M+).',
+        `Extended large-scale data and MLOps pipelines for deep neural networks using Google's C++ distributed framework, Flume, and TFX; improved accuracy by 10% across new verticals.`,
+        'Automated hyperparameter tuning with Google Vizier / Bayesian optimization by creating a simulation pipeline to evaluate model configurations after release, saving 10 developer-hours per cycle.',
+        'Deployed region-specific model architectures, optimizing inference and ad ranking for targeted geographies to maximize click-through rate and revenue.',
       ],
     },
     {
@@ -102,33 +101,8 @@ var content = {
       END: '10/2021',
       INFO: [
         'Optimized checkout UX through iterative experiments on component design, improving conversion rates.',
-        'Contributed to over 5% user growth with GTM features, empowering users in new international markets.',
-        'Maintained regex-based input validation for checkout forms, improving data accuracy and preventing invalid submissions.',
-      ],
-    },
-    {
-      LOGO: ancestryLogo,
-      COMPANY: 'Ancestry',
-      LINK: 'http://ancestry.com/',
-      ROLE: 'Software Developer Intern',
-      LOCATION: 'San Francisco, CA',
-      START: '05/2019',
-      END: '08/2019',
-      INFO: [
-        'Built and shipped frontend UI components and user flows for the Commerce platform using React, Redux, and JavaScript.',
-        'Raised core component library code coverage to over 90% with Jest and Cypress, and reduced page load time by 30% by replacing 3rd party dependencies.',
-      ],
-    },
-    {
-      LOGO: ucmcvlLogo,
-      COMPANY: 'Computer Vision Lab at UCMerced',
-      LINK: 'http://vision.ucmerced.edu/',
-      ROLE: 'Undergraduate Researcher',
-      LOCATION: 'Merced, CA',
-      START: '01/2019',
-      END: '05/2019',
-      INFO: [
-        'Researched converting audio recordings into spectrograms for bird-species classification with convolutional neural networks in PyTorch.',
+        'Contributed to over 5% user growth with go-to-market features that enabled users in new international markets.',
+        'Implemented multi-region and multi-language validation, supporting international go-to-market campaigns.',
       ],
     },
   ],
@@ -137,7 +111,7 @@ var content = {
       LOGO: ucmLogo,
       NAME: 'University of California, Merced',
       DEGREE: 'BSc in Computer Science and Engineering',
-      EXTRA: 'Honors (3.6 GPA)',
+      EXTRA: "Dean's Honors (3.6 GPA)",
       START: '08/2016',
       END: '12/2019',
       CLASSES: [
@@ -151,23 +125,22 @@ var content = {
   // renders clusters inline, separated by a middot, with no sub-headings.
   SKILLS: {
     LANGUAGES: [
-      ['Python', 'C++'],
-      ['SQL', 'JavaScript / TypeScript'],
+      ['Python', 'C++', 'SQL'],
+      ['TypeScript', 'JavaScript'],
     ],
     TECHNOLOGIES: [
-      ['TensorFlow', 'TFX', 'Pandas', 'scikit-learn', 'Snowflake'],
+      ['FastAPI', 'Node.js', 'gRPC', 'Snowflake', 'AWS RDS'],
+      ['AWS', 'GCP', 'Vercel', 'Supabase', 'CI/CD'],
       [
-        'AWS',
-        'AWS RDS',
-        'GCP',
-        'FastAPI',
-        'gRPC',
-        'Node.js',
-        'Supabase',
-        'Vercel',
+        'TensorFlow',
+        'TFX',
+        'Pandas',
+        'scikit-learn',
+        'React',
         'Astro',
+        'Jest',
+        'Cypress',
       ],
-      ['React', 'Redux', 'Jest', 'Cypress'],
     ],
     SPOKEN: [['English 🇺🇸', 'Español 🇲🇽', '한국어 🇰🇷']],
   },
