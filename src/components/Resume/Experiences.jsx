@@ -8,7 +8,13 @@ const Experience = ({ exp }) => {
     <div className="Experience">
       <div className="ExpHeader">
         <a href={exp.LINK} className="LogoLink">
-          <img className="Logo" src={exp.LOGO} alt={exp.COMPANY} />
+          {exp.LOGO ? (
+            <img className="Logo" src={exp.LOGO} alt={exp.COMPANY} />
+          ) : (
+            <span className="Logo Monogram" role="img" aria-label={exp.COMPANY}>
+              {exp.MONOGRAM}
+            </span>
+          )}
         </a>
         <div className="ExpMeta">
           <div className="Role">{exp.ROLE}</div>
