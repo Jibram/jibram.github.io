@@ -16,7 +16,7 @@ A modern frontend resume bootstrapped with [Vite](https://vitejs.dev/), featurin
 Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (v16 or higher recommended)
-- npm (comes with Node.js) or [pnpm](https://pnpm.io/) or [yarn](https://yarnpkg.com/)
+- [Bun](https://bun.sh/)
 
 ### Installation
 
@@ -25,17 +25,13 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-npm install
-# or
-yarn install
-# or
-pnpm install
+bun install
 ```
 
 ### Running in Development
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 Open http://localhost:5173 to view the app.
@@ -45,7 +41,7 @@ If port 5173 is already occupied by another service, the output of the command s
 ### Building for Production
 
 ```bash
-npm run build
+bun run build
 ```
 
 The production-ready files will be in the dist/ directory.
@@ -53,7 +49,7 @@ The production-ready files will be in the dist/ directory.
 ### Previewing Production Build
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 ### BUILD and DEPLOY on GitHub Pages

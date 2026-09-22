@@ -33,15 +33,18 @@ jobs:
         with:
           node-version: "20" # Use Node.js version 20 (you can change this if needed)
 
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
       # Step 3: Install project dependencies
       - name: Install dependencies
-        # 'npm ci' is recommended in CI environments for clean, consistent installs
-        run: npm ci
+        # --frozen-lockfile fails if bun.lock is out of date, like 'npm ci'
+        run: bun install --frozen-lockfile
 
       # Step 4: Build the Vite React project for production
       - name: Build project
         # This command runs the 'build' script defined in your package.json (e.g., 'vite build')
-        run: npm run build
+        run: bun run build
 
       # Step 5: Upload the built artifact for GitHub Pages
       # This action takes your 'dist' folder and makes it available for the 'deploy' job
