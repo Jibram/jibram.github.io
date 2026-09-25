@@ -14,7 +14,7 @@ var content = {
     NAME: 'Jibram Jimenez-Loza',
   },
   ABOUT:
-    'Versatile Software Engineer with 5+ years of experience building scalable production systems and early-stage infrastructure. Proven track record at Google generating $10M+ in revenue through ML-driven pricing models and optimizing MLOps pipelines. Experienced in both high-scale distributed systems and rapid, independent product development. Skilled in Python, JavaScript, C++, and cloud-native architecture, with a focus on ownership, reliability, and measurable business impact.',
+    'Software Engineer with 5+ years of experience building ML and AI systems end to end, from models and data pipelines to the product and release infrastructure around them. At Google, built ML-driven reserve-pricing models that generated $10M+ in revenue and extended large-scale MLOps pipelines. Since then, has owned release infrastructure for the Letta desktop app and 0-to-1 engineering for early-stage startups. Skilled in Python, C++, TypeScript, and cloud-native architecture.',
   CONTACT: [
     {
       SRC: gmailLogo,
@@ -43,7 +43,8 @@ var content = {
       START: '08/2026',
       END: 'Present',
       INFO: [
-        'Built and integrated a packaged smoke-test stage into the Letta desktop app release pipeline; caught and fixed a Linux regression and established automated gating before production promotion.',
+        'Proposed and built a packaged e2e stage for the Letta desktop release pipeline, testing the fully built app users install and gating production promotion on failure.',
+        'Caught a couple of packaging regressions (asar, native modules) the existing e2e suite missed in its first week, including an open user-reported bug; fixed both.',
       ],
     },
     {
@@ -59,8 +60,8 @@ var content = {
         'chelys.io': 'https://chelys.io/',
       },
       INFO: [
-        'Built and deployed the humanicore.ai and chelys.io websites, configuring DNS, GitHub-connected Vercel preview and production deployments, and initial AWS/Supabase services.',
-        'Implemented an Astro server-side user-submission flow with input scrubbing and rate limiting; contributed early technical and product-direction input for both pre-seed initiatives.',
+        'Owned 0-to-1 engineering for two pre-seed startups, launching humanicore.ai and chelys.io with DNS, GitHub-connected Vercel preview and production pipelines, and initial AWS/Supabase services.',
+        'Built a server-side submission flow in Astro with input scrubbing and rate limiting; advised founders on early technical and product direction.',
       ],
     },
     {
@@ -72,8 +73,8 @@ var content = {
       START: '09/2025',
       END: '11/2025',
       INFO: [
-        'Extended a customer data-ingestion workflow for a client-specific schema, including Snowflake-backed data loading, database migrations, and intermediate-table transformations for a production searchable database.',
-        'Integrated the new data with an existing customer-matching and heuristic-ranking workflow across Python/FastAPI services, AWS RDS, and Snowflake.',
+        'Extended an ELT pipeline to support a client-specific schema, including Snowflake loading, database migrations, and intermediate-table transformations, taking the client live on a production searchable database.',
+        'Integrated the new data into the existing customer-matching and heuristic-ranking workflow across Python/FastAPI services, AWS RDS, and Snowflake.',
       ],
     },
     {
