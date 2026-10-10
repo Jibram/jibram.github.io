@@ -72,7 +72,7 @@ var content = {
       ROLE: 'Software Engineer',
       LOCATION: 'Remote (SF Bay Area)',
       START: '09/2025',
-      END: '11/2025',
+      END: '12/2025',
       INFO: [
         'Extended an ELT pipeline (Python, SQL, Snowflake) to support a client-specific schema, including database migrations and intermediate-table transformations, taking the client live on a production searchable database.',
         'Integrated the new data into the existing customer-matching and heuristic-ranking workflow across Python/FastAPI services, AWS RDS, and Snowflake.',
