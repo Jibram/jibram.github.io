@@ -7,6 +7,7 @@ import ancestryLogo from '../assets/images/ancestry.webp';
 import googleLogo from '../assets/images/google.webp';
 import datavantLogo from '../assets/images/datavant.webp';
 import ucmLogo from '../assets/images/ucmerced.webp';
+import yonseiLogo from '../assets/images/yonsei.webp';
 
 var content = {
   ME: {
@@ -117,6 +118,19 @@ var content = {
         'Algorithm Analysis',
         'Computer Networks',
         'Distributed Systems',
+      ],
+    },
+    {
+      LOGO: yonseiLogo,
+      NAME: 'Yonsei University, Seoul',
+      DEGREE: 'Study Abroad',
+      START: '08/2017',
+      END: '06/2018',
+      CLASSES: [
+        'Artificial Intelligence',
+        'Computer Vision',
+        'Data Structures',
+        'Theory of Computation',
       ],
     },
   ],
